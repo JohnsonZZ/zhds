@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<include file="Public/header" title="产品-百事得物流公司" />
+<include file="Public/header" title="产品-广东中航鼎盛首饰技术开发有限公司" />
 </head>
 
 <body>
@@ -20,10 +20,9 @@
 				</ul>
 				<h3>联系我们</h3>
 				<ul class="contact-ul">
-					<li>公司名称：<br />百事得物流有限公司</li>
-					<li>官网：www.zqbestlog.com</li>
+					<li>官网：zhds.cxg-e.com</li>
 					<li>邮编：516000</li>
-					<li>合作热线：<br />0758-2107833</li>
+					<li>热线：0758-6622298 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0758-6622299</li>
 					<li>联系邮箱: baishidewuliu@163.com</li>  
 				</ul>
         	</div>
@@ -37,11 +36,11 @@
             </div>
 			<volist name="list" id="val">
 			<div class="goods">
-				<a id="image" href="javascript:;">
+				<a class="image1" href="javascript:;">
 					<div class="image">
 						<img src="__PUBLIC__/upload/image/{$val[href]}" alt="{$val['brief']}"  height="150" width="140"/>
 					</div>
-					
+						<div id="tong" class="hide layui-layer-wrap" style="display: none;"><img src="__PUBLIC__/upload/image/{$val[href]}" width="100%" /></div>
 					<div class="image-bottom f14">
 						{$val['brief']}
 					</div>
@@ -50,13 +49,13 @@
 			</volist>
         </div>
     </div>
-	<div id="tong" class="hide layui-layer-wrap" style="display: none;"><img src="__PUBLIC__/images/example1.jpg" width="100%" /></div>
+
 	<include file="Public/footer" />
 		<script src="__PUBLIC__/js/jquery.js"></script>
 		<!-- layer 2.2 -->
 		<script src="__PLUGINS__/layer/layer.js"></script>
 		<script>
-		$('#image').click(function(){
+		$(".image1").click(function(){
 			layer.open({
 			  type: 1,
 			  title: false,

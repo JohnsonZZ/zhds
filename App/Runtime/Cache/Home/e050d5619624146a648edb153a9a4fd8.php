@@ -41,11 +41,9 @@
 				</ul>
 				<h3>联系我们</h3>
 				<ul class="contact-ul">
-					<li>公司名称：<br />百事得物流有限公司</li>
-					<li>官网：www.zqbestlog.com</li>
+					<li>官网：zhds.cxg-e.com</li>
 					<li>邮编：516000</li>
-					<li>合作热线：<br />0758-2107833</li>
-					<li>联系邮箱: baishidewuliu@163.com</li>  
+					<li>合作热线：0758-6622298  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0758-6622299</li>
 				</ul>
         	</div>
         </div>

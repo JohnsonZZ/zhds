@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>产品-百事得物流公司</title>
+<title>产品-广东中航鼎盛首饰技术开发有限公司</title>
 <link rel="stylesheet" href="/zhds/Public/css/base.css" />
 <link rel="stylesheet" href="/zhds/Public/css/style.css" />
 </head>
@@ -43,10 +43,9 @@
 				</ul>
 				<h3>联系我们</h3>
 				<ul class="contact-ul">
-					<li>公司名称：<br />百事得物流有限公司</li>
-					<li>官网：www.zqbestlog.com</li>
+					<li>官网：zhds.cxg-e.com</li>
 					<li>邮编：516000</li>
-					<li>合作热线：<br />0758-2107833</li>
+					<li>热线：0758-6622298 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0758-6622299</li>
 					<li>联系邮箱: baishidewuliu@163.com</li>  
 				</ul>
         	</div>
@@ -59,11 +58,11 @@
                 </div>
             </div>
 			<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><div class="goods">
-				<a id="image" href="javascript:;">
+				<a class="image1" href="javascript:;">
 					<div class="image">
 						<img src="/zhds/Public/upload/image/<?php echo ($val[href]); ?>" alt="<?php echo ($val['brief']); ?>"  height="150" width="140"/>
 					</div>
-					
+						<div id="tong" class="hide layui-layer-wrap" style="display: none;"><img src="/zhds/Public/upload/image/<?php echo ($val[href]); ?>" width="100%" /></div>
 					<div class="image-bottom f14">
 						<?php echo ($val['brief']); ?>
 					</div>
@@ -71,7 +70,7 @@
 			</div><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
     </div>
-	<div id="tong" class="hide layui-layer-wrap" style="display: none;"><img src="/zhds/Public/images/example1.jpg" width="100%" /></div>
+
 	<div class="footer">
      <div class="footer-content bc">
 		<hr />
@@ -93,7 +92,7 @@
 		<!-- layer 2.2 -->
 		<script src="/zhds/Plugins/layer/layer.js"></script>
 		<script>
-		$('#image').click(function(){
+		$(".image1").click(function(){
 			layer.open({
 			  type: 1,
 			  title: false,
