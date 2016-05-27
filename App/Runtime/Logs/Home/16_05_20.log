@@ -1,0 +1,733 @@
+[ 2016-05-20T10:20:17+08:00 ] 127.0.0.1 /zhds/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008505s ]
+ERR: SQLSTATE[42000] [1049] Unknown database 'zhds'
+
+[ 2016-05-20T10:22:13+08:00 ] 127.0.0.1 /zhds/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc LIMIT 6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024240s ]
+
+[ 2016-05-20T10:22:16+08:00 ] 127.0.0.1 /zhds/Home/Service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2016-05-20T10:22:18+08:00 ] 127.0.0.1 /zhds/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc LIMIT 6   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002063s ]
+
+[ 2016-05-20T10:22:33+08:00 ] 127.0.0.1 /zhds/Home/Service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2016-05-20T10:22:35+08:00 ] 127.0.0.1 /zhds/Home/Case/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000191s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `zz_list` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `zz_list`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-05-20T10:22:36+08:00 ] 127.0.0.1 /zhds/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc LIMIT 6   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2016-05-20T10:22:52+08:00 ] 127.0.0.1 /zhds/Home/Case/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `zz_list` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `zz_list`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-05-20T10:22:54+08:00 ] 127.0.0.1 /zhds/Home/Service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002730s ]
+
+[ 2016-05-20T10:22:57+08:00 ] 127.0.0.1 /zhds/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc LIMIT 6   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001354s ]
+
+[ 2016-05-20T10:23:00+08:00 ] 127.0.0.1 /zhds/Home/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2016-05-20T10:23:00+08:00 ] 127.0.0.1 /zhds/Home/Comp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2016-05-20T10:23:05+08:00 ] 127.0.0.1 /zhds/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc LIMIT 6   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001253s ]
+
+[ 2016-05-20T10:23:07+08:00 ] 127.0.0.1 /zhds/Home/Comp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-05-20T10:23:29+08:00 ] 127.0.0.1 /zhds/Home/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2016-05-20T10:23:32+08:00 ] 127.0.0.1 /zhds/Home/News/article/theme/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `zz_news` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001100s ]
+
+[ 2016-05-20T10:23:47+08:00 ] 127.0.0.1 /zhds/Home/Case/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `zz_list` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `zz_list`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-05-20T10:23:52+08:00 ] 127.0.0.1 /zhds/Home/Case/article/theme/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `zz_list` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `zz_list` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001206s ]
+
+[ 2016-05-20T10:23:57+08:00 ] 127.0.0.1 /zhds/Home/Service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2016-05-20T10:24:05+08:00 ] 127.0.0.1 /zhds/Home/Service/goods/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `zz_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2016-05-20T10:24:22+08:00 ] 127.0.0.1 /zhds/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc LIMIT 6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001511s ]
+
+[ 2016-05-20T10:40:09+08:00 ] 127.0.0.1 /zhds/Home/Service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002056s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002205s ]
+
+[ 2016-05-20T10:40:24+08:00 ] 127.0.0.1 /zhds/Home/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\e050d5619624146a648edb153a9a4fd8.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001844s ]
+
+[ 2016-05-20T10:40:28+08:00 ] 127.0.0.1 /zhds/Home/Case/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `zz_list` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `zz_list`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2016-05-20T10:40:31+08:00 ] 127.0.0.1 /zhds/Home/Case/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `zz_list` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `zz_list`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 58 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\676f5efd1e91a6e64bbbb4208eb177e2.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2016-05-20T10:44:39+08:00 ] 127.0.0.1 /zhds/Home/Service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002190s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2016-05-20T10:44:40+08:00 ] 127.0.0.1 /zhds/Home/Service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol asc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 58 行.
+NOTIC: [8] Use of undefined constant href - assumed 'href' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\2c040600bfe38a8a20a1a09f59064127.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001567s ]
+
+[ 2016-05-20T10:44:43+08:00 ] 127.0.0.1 /zhds/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `zz_news` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `zz_news` ORDER BY time desc LIMIT 6   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\zhds\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002320s ]
+

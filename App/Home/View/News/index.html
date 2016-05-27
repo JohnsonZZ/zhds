@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public/header" title="新闻-百事得物流公司" />
+</head>
+
+<body>
+    <include file="Public/nav" />
+	<div class="blankarea1"></div>
+    <div class="main bc"> 
+        <div class="blankarea4"></div>
+    	<div class="main-list fl">
+        	<div class="main-menu">
+				<h3>新闻资讯</h3>
+				<ul class="main-ul">
+					<li id="company-news"><a href="{:U('News/index')}">新闻列表</a></li>
+					<li id="industry-news"></li>
+				</ul>
+				<h3>联系我们</h3>
+				<ul class="contact-ul">
+					<li>公司名称：<br />百事得物流有限公司</li>
+					<li>官网：www.zqbestlog.com</li>
+					<li>邮编：516000</li>
+					<li>合作热线：<br />0758-2107833</li>
+					<li>联系邮箱: baishidewuliu@163.com</li>  
+				</ul>
+        	</div>
+        </div>
+        <div class="main-content fl">
+        	<div class="main-name">
+            	<span>新闻资讯</span>
+                <div class="main-back fr">
+                	<a href="{:U('Index/index')}">首页</a>>新闻资讯
+                </div>
+            </div>
+            <div id="upgrade-company-news" class="main-news">
+            	<ul>
+					<volist name="list" id="val">
+                	<li><a href="{:U('Home/News/article/theme/'.$val[id])}">{$val['title']}</a><span>{$val['time']}</span></li>
+					</volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<include file="Public/footer" />
+		<script src="__PUBLIC__/js/jquery.js"></script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public/header" title="产品-百事得物流公司" />
+</head>
+
+<body>
+    <include file="Public/nav" />
+	<div class="blankarea1"></div>
+    <div class="main bc"> 
+        <div class="blankarea4"></div>
+    	<div class="main-list fl">
+        	<div class="main-menu">
+				<h3>产品分类</h3>
+				<ul class="main-ul">
+					<li id="company-news">><a href="{:U('index')}">所有产品</a></li>
+					<li id="company-news">><a href="?sort=1">手镯</a></li>
+					<li id="company-news">><a href="?sort=2">戒指</a></li>
+					<li id="company-news">><a href="?sort=3">套链</a></li>
+				</ul>
+				<h3>联系我们</h3>
+				<ul class="contact-ul">
+					<li>公司名称：<br />百事得物流有限公司</li>
+					<li>官网：www.zqbestlog.com</li>
+					<li>邮编：516000</li>
+					<li>合作热线：<br />0758-2107833</li>
+					<li>联系邮箱: baishidewuliu@163.com</li>  
+				</ul>
+        	</div>
+        </div>
+        <div class="main-content fl">
+        	<div class="main-name">
+            	<span>所有产品</span>
+                <div class="main-back fr">
+                	<a href="{:U('Index/index')}">首页</a>>所有产品
+                </div>
+            </div>
+			<volist name="list" id="val">
+			<div class="goods">
+				<a id="image" href="javascript:;">
+					<div class="image">
+						<img src="__PUBLIC__/upload/image/{$val[href]}" alt="{$val['brief']}"  height="150" width="140"/>
+					</div>
+					
+					<div class="image-bottom f14">
+						{$val['brief']}
+					</div>
+				</a>
+			</div>
+			</volist>
+        </div>
+    </div>
+	<div id="tong" class="hide layui-layer-wrap" style="display: none;"><img src="__PUBLIC__/images/example1.jpg" width="100%" /></div>
+	<include file="Public/footer" />
+		<script src="__PUBLIC__/js/jquery.js"></script>
+		<!-- layer 2.2 -->
+		<script src="__PLUGINS__/layer/layer.js"></script>
+		<script>
+		$('#image').click(function(){
+			layer.open({
+			  type: 1,
+			  title: false,
+			  closeBtn: 0,
+			  skin: 'layui-layer-nobg', //没有背景色
+			  shadeClose: true,
+			  content: $('#tong')
+			});
+		})
+		</script>
+    </body>
+</html>
