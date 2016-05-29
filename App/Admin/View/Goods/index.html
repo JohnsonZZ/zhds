@@ -4,6 +4,7 @@
 		<include file="Public/header" title="TonyMB | 控制台"/>
 	</head>
 <body class="hold-transition skin-blue sidebar-mini">
+	<include file="Public/script" />
 	<div class="wrapper">
 		<include file="Public/top" />
 		<include file="Public/left" />
@@ -50,6 +51,7 @@
                         <th class="center"><input class="check-all" type="checkbox" value=""></th>
 						<th>产品图</th>
 						<th>排序</th>
+						<th>分类</th>
 						<th>简介</th>
 						<th>详情</th>
 						<th>时间</th>
@@ -62,6 +64,21 @@
 						</td>
 						<td><img src="__PUBLIC__/upload/image/{$val['href']}" width="150px" height="130px" /></td>
 						<td>{$val['ol']}</td>
+						<script>
+						$(function(){
+							var sort = {$val['sort']};
+							if(sort == 1 ){
+								$('.sort{$val['id']}').text("手镯"); 
+								}
+							if(sort == 2 ){
+								$('.sort{$val['id']}').text("戒指"); 
+							}
+							if(sort == 3 ){
+								$('.sort{$val['id']}').text("套链"); 
+							}
+						});
+						</script>
+						<td class="sort{$val['id']}"></td>
 						<td>{$val['brief']|msubstr=0,30}</td>
 						<td><a href="{:U('edit')}?id={$val['id']}">点击查看</a></td>
 						<td>{$val['time']}</td>
@@ -87,7 +104,7 @@
 		<!-- /.content-wrapper -->
 		<include file="Public/footer" />
     </div><!-- ./wrapper -->
-	<include file="Public/script" />
+
 	<script>
 		$('#pGoods').addClass("active").siblings().removeClass("active");
 		$('#iGoods').addClass("active");
@@ -104,7 +121,7 @@
 						$(".check-all").prop("checked", true);
 					}
 				});
-			})
+			});
 			$("#del").click(function(){
 				layer.open({
 					icon:0,
@@ -116,7 +133,7 @@
 						$('#form').submit();
 						}
 				});	
-			})
+			});
 			$(".del").click(function(){
 				var val=$(this).attr('val');
 				layer.open({
@@ -129,8 +146,9 @@
 							location.href = val;
 						}
 				});	
-			})
-		})
+			});
+			
+		});
 	</script>
 </body>
 </html>

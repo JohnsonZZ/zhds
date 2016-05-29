@@ -146,7 +146,7 @@
             <li id="pGoods" class="treeview">
               <a href="#">
                 <i class="fa fa-user"></i>
-                <span>服务产品</span>
+                <span>公司产品</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -229,8 +229,10 @@
 							<input type="hidden" name="id" value="<?php echo ($list[id]); ?>" />
                             <div class="box-body">
 								<div class="form-group">
-									<label for="goods">
-                                        产品图(不上传新的，默认使用原图)
+									 <label for="goods" class="form-group-img">
+									 原图片<br /><img src="/zhds/Public/upload/image/<?php echo ($list['href']); ?>"   id="oldgoods"  width="60px" height="60px"><br /> 
+									 新图片(不设置或者设置错误都将使用原来图片)<br />
+                                        图片（不能大于2MB）
                                     </label>
 									<input type="file" name="photo" id="goods" />
 								</div>
@@ -239,6 +241,17 @@
                                         排序
                                     </label>
                                     <input type="text" class="form-control" name="ol" id="ol" placeholder="序号越低越靠前" value="<?php echo ($list[ol]); ?>" />
+                                </div>
+								<div class="form-group">
+                                    <label for="sort">
+                                        分类
+                                    </label>
+                                    <select class="form-control" id="sort"  name="sort">
+										<option value="">全部</option>
+										<option value="1">手镯</option>
+										<option value="2">戒指</option>
+										<option value="3">套链</option>
+									</select>
                                 </div>
 								<div class="form-group">
                                     <label for="brief">
@@ -296,6 +309,13 @@
 				maxFileSize: 1024,
             });
 			var ue = UE.getEditor('content',{ initialFrameWidth: null });
+			
+			var lOption = $('#sort').children();
+			lOption.each(function(){
+				if($(this).val() == "<?php echo ($list['sort']); ?>"){
+				$(this).attr('selected','selected');
+				}			
+			});
 		</script>
     </body>
 

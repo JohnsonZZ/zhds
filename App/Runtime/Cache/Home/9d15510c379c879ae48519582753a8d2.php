@@ -11,24 +11,26 @@
     <div class="nav">
     <div class="nav-top">
         <div class="nav-header bc">
-			<img src="/zhds/Public/images/top.jpg" alt="百事得" />
+			<img src="/zhds/Public/images/logo.jpg" alt="百事得" />
         </div>	
-    </div>
-    <div class="nav-bottom">
+		<div class="nav-bottom">
 		<div class="nav-list bc">
             <ul class="nav-ui">
                 <li class="inline"><a href="<?php echo U('Index/index');?>">公司首页</a></li>
                 <li class="inline"><a href="<?php echo U('Service/index');?>">黄金首饰</a></li>
-                <li class="inline"><a href="<?php echo U('Case/index');?>">案例展示</a></li>
+                <li class="inline"><a href="javascript:void(0);">产品介绍</a></li>
                 <li class="inline"><a href="<?php echo U('News/index');?>">新闻资讯</a></li>
                 <li class="inline"><a href="<?php echo U('Comp/index');?>">关于我们</a></li>
             </ul>
         </div>
     </div>
+    </div>
+    
 </div>
+    <div class="blankarea1"></div>
+					<img src="/zhds/Public/images/zhong3.jpg" alt="百事得宣传"  />
 	<div class="blankarea1"></div>
     <div class="main bc"> 
-		<img src="/zhds/Public/images/case-top.jpg" alt="百事得宣传"  />
         <div class="blankarea4"></div>
 			<div class="main-list fl">
 				<div class="main-menu">
@@ -61,6 +63,7 @@
 	
 	<div class="footer">
      <div class="footer-content bc">
+		<hr />
         <div class="footer-line fl">
         	<ul>
                 <li class="inline"><a href="<?php echo U('Comp/index');?>">关于我们 | </a></li>

@@ -2,7 +2,7 @@
 <html>
     
     <head>
-        <include file="Public/header" title="TonyMB | 控制台" />
+        <include file="Public/header" title="修改产品 | 中航鼎盛控制台" />
 		<link rel="stylesheet" href="__BOOTSTRAP__/css/fileinput.min.css">
     </head>
     
@@ -45,8 +45,10 @@
 							<input type="hidden" name="id" value="{$list[id]}" />
                             <div class="box-body">
 								<div class="form-group">
-									<label for="goods">
-                                        产品图(不上传新的，默认使用原图)
+									 <label for="goods" class="form-group-img">
+									 原图片<br /><img src="__PUBLIC__/upload/image/{$list['href']}"   id="oldgoods"  width="60px" height="60px"><br /> 
+									 新图片(不设置或者设置错误都将使用原来图片)<br />
+                                        图片（不能大于2MB）
                                     </label>
 									<input type="file" name="photo" id="goods" />
 								</div>
@@ -55,6 +57,17 @@
                                         排序
                                     </label>
                                     <input type="text" class="form-control" name="ol" id="ol" placeholder="序号越低越靠前" value="{$list[ol]}" />
+                                </div>
+								<div class="form-group">
+                                    <label for="sort">
+                                        分类
+                                    </label>
+                                    <select class="form-control" id="sort"  name="sort">
+										<option value="">全部</option>
+										<option value="1">手镯</option>
+										<option value="2">戒指</option>
+										<option value="3">套链</option>
+									</select>
                                 </div>
 								<div class="form-group">
                                     <label for="brief">
@@ -100,6 +113,13 @@
 				maxFileSize: 1024,
             });
 			var ue = UE.getEditor('content',{ initialFrameWidth: null });
+			
+			var lOption = $('#sort').children();
+			lOption.each(function(){
+				if($(this).val() == "{$list['sort']}"){
+				$(this).attr('selected','selected');
+				}			
+			});
 		</script>
     </body>
 

@@ -1,10 +1,9 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
-    
-    <head>
-        	<meta charset="utf-8">
+	<head>
+			<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TonyMB | 控制台</title>
+    <title>图片轮播 | 中航鼎盛控制台</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -16,12 +15,18 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="/zhds/Public/css/skins.min.css">
-		<link rel="stylesheet" href="/zhds/Bootstrap/css/fileinput.min.css">
-    </head>
-    
-    <body class="hold-transition skin-blue sidebar-mini">
-        <div class="wrapper">
-            <header class="main-header">
+	</head>
+<body class="hold-transition skin-blue sidebar-mini">
+		<!-- jQuery 1.1.12 -->
+    <script src="/zhds/Public/js/jquery.js"></script>
+	<!-- layer 2.2 -->
+	<script src="/zhds/Plugins/layer/layer.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="/zhds/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/zhds/Public/js/app.min.js"></script>
+	<div class="wrapper">
+		<header class="main-header">
         <!-- Logo -->
         <a href="index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -121,7 +126,7 @@
           </div>
         </nav>
       </header>
-            <!-- Left side column. contains the logo and sidebar -->
+		<!-- Left side column. contains the logo and sidebar -->
 	<aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
@@ -194,138 +199,132 @@
         </section>
         <!-- /.sidebar -->
       </aside>
-            <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
-                <section class="content-header">
-                    <h1>
-                        添加产品
-                        <small>
-                            注意排序方式
-                        </small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="<?php echo U('Index/index');?>">
-                                <i class="fa fa-dashboard">
-                                </i>
-                                控制台
-                            </a>
-                        </li>
-                        <li class="active">
-                            添加产品
-                        </li>
-                    </ol>
-                </section>
-                <section class="content">
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">
-                                添加产品
-                            </h3>
-                        </div>
-                        <!-- /.box-header -->
-                        <!-- form start -->
-                        <form role="form" action="<?php echo U('update');?>" method="post" enctype="multipart/form-data">
-                            <div class="box-body">
-								<div class="form-group">
-									<label for="goods">
-                                        产品图
-                                    </label>
-									<input type="file" name="photo" id="goods" />
-								</div>
-								<div class="form-group">
-                                    <label for="ol">
-                                        排序(1-7出现在首页！)
-                                    </label>
-                                    <input type="text" class="form-control" name="ol" id="ol" placeholder="序号越低越靠前">
-                                </div>
-								<div class="form-group">
-                                    <label for="sort">
-                                        分类
-                                    </label>
-                                    <select class="form-control" id="sort" name="sort">
-										<option value="">全部</option>
-										<option value="1">手镯</option>
-										<option value="2">戒指</option>
-										<option value="3">套链</option>
-									</select>
-                                </div>
-								<div class="form-group">
-                                    <label for="brief">
-                                        简介
-                                    </label>
-                                    <input type="text" class="form-control" name="brief" id="brief" placeholder="输入简介">
-                                </div>
-								<div class="form-group">
-								  <label for="content">内容</label>
-								  <textarea name="content" id="content" style="height:400px;" placeholder="Enter ..."></textarea>
-								</div>
-								
-                            </div>
-                            <!-- /.box-body -->
-                            <div class="box-footer">
-                                <button type="submit" id = "addbutton" class="btn btn-primary">
-                                    提交
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- /.box -->
-                    <section>
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+		<section class="content-header">
+          <h1>
+            图片轮播
+            <small>前五出现在首页</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="<?php echo U('Index/index');?>"><i class="fa fa-dashboard"></i> 控制台</a></li>
+            <li class="active">查看图片</li>
+          </ol>
+        </section>
+		<section class="content">
+		<div class="row">
+            <div class="col-xs-12">
+              <div class="box box-primary">
+                <div class="box-header">
+                  <div class="search-box">
+					  <form class="form-inline" action="" method="get">
+					    <select name="order"  id="order" class="form-control input-sm">
+							<option value="">发布时间</option>
+							<option value="asc">发布时间升</option>
+							<option value="desc">发布时间降</option>
+						</select>
+						<select name="ol" id="ol" class="form-control input-sm">
+							<option value="">排序</option>
+							<option value="asc">升序</option>
+							<option value="desc">降序</option>
+						</select>
+					  </form>
+                  </div>
+                </div><!-- /.box-header -->
+				<form id="form" action="<?php echo U('del');?>" method="post">
+                <div class="box-body table-responsive no-padding">
+                  <table class="table table-hover">
+                    <tr>
+                        <th class="center"><input class="check-all" type="checkbox" value=""></th>
+						<th>排序</th>
+						<th>图片</th>
+						<th>时间</th>
+						<th class="center">操作</th>
+				    </tr>
+					<?php if(is_array($img)): $i = 0; $__LIST__ = $img;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><tr>
+						<td class="center">
+							<input class="lids" type="checkbox" name="id[]" value="<?php echo ($val['id']); ?>">
+						</td>
+						<td><?php echo ($val['ol']); ?></td>
+						<td><img src="/zhds/Public/upload/image/<?php echo ($val['img']); ?>" width="150px" height="130px" /></td>
+						<td><?php echo ($val['time']); ?></td>
+						<td class="center"><a href="<?php echo U('edit');?>?id=<?php echo ($val['id']); ?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="del" href="javascript:;" val="<?php echo U('del');?>?id=<?php echo ($val['id']); ?>" title="删除"><i class="fa fa-trash-o"></i></a></td>
+									
+				   </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </table>
+                </div><!-- /.box-body -->
+				<div class="box-footer clearfix">
+			      <a href="<?php echo U('add');?>" id="add" class="btn btn-default">增加</a>
+				  <button type="button" id="del" class="btn btn-default">删除</button>
+                  <ul class="pagination pagination-sm no-margin pull-right">
+                   <?php echo ($page); ?>
+                  </ul>
+                </div>
+				</form>
+              </div><!-- /.box -->
             </div>
-            <!-- /.content-wrapper -->
-            	<footer class="main-footer">
+          </div>
+		  </section><!-- /.content -->
+	    </div>
+		<!-- /.content-wrapper -->
+			<footer class="main-footer">
         <div class="pull-right hidden-xs">
           <b>Version</b> 1.0.0
         </div>
         <strong>Copyright &copy; 2016-2017 <a href="http://almsaeedstudio.com">ZZ Studio</a>.</strong> All rights reserved.
       </footer>
-        </div>
-        <!-- ./wrapper -->
-        	<!-- jQuery 1.1.12 -->
-    <script src="/zhds/Public/js/jquery.js"></script>
-	<!-- layer 2.2 -->
-	<script src="/zhds/Plugins/layer/layer.js"></script>
-    <!-- Bootstrap 3.3.5 -->
-    <script src="/zhds/Bootstrap/js/bootstrap.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="/zhds/Public/js/app.min.js"></script>
-		<script src="/zhds/Bootstrap/js/fileinput.min.js"></script>
-		<script src="/zhds/Bootstrap/js/fileinput_locale_zh.js"></script>
-		<script charset="utf-8" src="/zhds/Plugins/ueditor/ueditor.config.js"></script>
-		<script charset="utf-8" src="/zhds/Plugins/ueditor/ueditor.all.min.js"></script>
-		<script charset="utf-8" src="/zhds/Plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
-        <script>
-            $('#pGoods').addClass("active").siblings().removeClass("active");
-            $('#aGoods').addClass("active");
-			$('#goods').fileinput({
-                language: 'zh', //设置语言
-                allowedFileExtensions : ['jpg', 'png','gif'],//接收的文件后缀,
-                showUpload: false, //是否显示上传按钮
-                showCaption: false,//是否显示标题
-                browseClass: "btn btn-primary", //按钮样式 
-				maxFileSize: 1024,
-            });
-			var ue = UE.getEditor('content',{ initialFrameWidth: null });
-			$("#addbutton").click(function(){
-				var goods = $('#goods').val();
-				var sort = $('#sort').val();
-				var brief = $('#brief').val();
-				if(goods.length==0){
-					layer.msg("产品图不能为空");
-					return false;
-				}
-				if(sort==""){
-					layer.msg("请选择分类");
-					return false;
-				}
-				if(brief.length==0){
-					layer.msg("简介不能为空");
-					return false;
-				}
-				
-			});
-		</script>
-    </body>
+    </div><!-- ./wrapper -->
 
+	<script>
+		$('#pImg').addClass("active").siblings().removeClass("active");
+		$('#iImg').addClass("active");
+		$(function(){
+			$(".check-all").click(function(){
+				$(".lids").prop("checked", this.checked);
+			});
+			$(".lids").click(function(){
+				$(".lids").each(function(i){
+					if(!this.checked){
+						$(".check-all").prop("checked", false);
+						return false;
+					}else{
+						$(".check-all").prop("checked", true);
+					}
+				});
+			});
+			$("#order").change(function(){
+				$('form:eq(1)').submit();
+			});
+			$('#ol').change(function(){
+				$('form:eq(1)').submit();
+			})
+			$("#del").click(function(){
+				layer.open({
+					icon:0,
+					title: '删除列表',
+					type: 0, 
+					content: '是否删除选中列表',
+					btn: ['确认', '取消'],
+					yes: function(){
+						$('#form').submit();
+						}
+				});	
+			});
+			$(".del").click(function(){
+				var val=$(this).attr('val');
+				layer.open({
+					icon:0,
+					title: '删除列表',
+					type: 0, 
+					content: '是否删除选中列表',
+					btn: ['确认', '取消'],
+					yes: function(){
+							location.href = val;
+						}
+				});	
+			});
+			
+		});
+	</script>
+</body>
 </html>

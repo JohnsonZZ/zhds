@@ -17,6 +17,14 @@
     <link rel="stylesheet" href="/zhds/Public/css/skins.min.css">
 	</head>
 <body class="hold-transition skin-blue sidebar-mini">
+		<!-- jQuery 1.1.12 -->
+    <script src="/zhds/Public/js/jquery.js"></script>
+	<!-- layer 2.2 -->
+	<script src="/zhds/Plugins/layer/layer.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="/zhds/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/zhds/Public/js/app.min.js"></script>
 	<div class="wrapper">
 		<header class="main-header">
         <!-- Logo -->
@@ -151,15 +159,15 @@
                 <li id="aGoods"><a href="<?php echo U('Goods/add');?>"><i class="fa fa-circle-o"></i> 添加产品</a></li>
               </ul>
             </li>
-            <li id="pList" class="treeview">
+			<li id="pImg" class="treeview">
               <a href="#">
                 <i class="fa fa-laptop"></i>
-                <span>案例展示</span>
+                <span>图片轮播</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li id="iList"><a href="<?php echo U('List/index');?>"><i class="fa fa-circle-o"></i> 查看案例</a></li>
-                <li id="aList"><a href="<?php echo U('List/add');?>"><i class="fa fa-circle-o"></i> 添加案例</a></li>
+                <li id="iImg"><a href="<?php echo U('Img/index');?>"><i class="fa fa-circle-o"></i> 查看图片</a></li>
+                <li id="aImg"><a href="<?php echo U('Img/add');?>"><i class="fa fa-circle-o"></i> 添加图片</a></li>
               </ul>
             </li>
 			<li id="pNews" class="treeview">
@@ -234,6 +242,7 @@
                         <th class="center"><input class="check-all" type="checkbox" value=""></th>
 						<th>产品图</th>
 						<th>排序</th>
+						<th>分类</th>
 						<th>简介</th>
 						<th>详情</th>
 						<th>时间</th>
@@ -245,6 +254,21 @@
 						</td>
 						<td><img src="/zhds/Public/upload/image/<?php echo ($val['href']); ?>" width="150px" height="130px" /></td>
 						<td><?php echo ($val['ol']); ?></td>
+						<script>
+						$(function(){
+							var sort = <?php echo ($val['sort']); ?>;
+							if(sort == 1 ){
+								$('.sort<?php echo ($val['id']); ?>').text("手镯"); 
+								}
+							if(sort == 2 ){
+								$('.sort<?php echo ($val['id']); ?>').text("戒指"); 
+							}
+							if(sort == 3 ){
+								$('.sort<?php echo ($val['id']); ?>').text("套链"); 
+							}
+						});
+						</script>
+						<td class="sort<?php echo ($val['id']); ?>"></td>
 						<td><?php echo (msubstr($val['brief'],0,30)); ?></td>
 						<td><a href="<?php echo U('edit');?>?id=<?php echo ($val['id']); ?>">点击查看</a></td>
 						<td><?php echo ($val['time']); ?></td>
@@ -274,14 +298,7 @@
         <strong>Copyright &copy; 2016-2017 <a href="http://almsaeedstudio.com">ZZ Studio</a>.</strong> All rights reserved.
       </footer>
     </div><!-- ./wrapper -->
-		<!-- jQuery 1.1.12 -->
-    <script src="/zhds/Public/js/jquery.js"></script>
-	<!-- layer 2.2 -->
-	<script src="/zhds/Plugins/layer/layer.js"></script>
-    <!-- Bootstrap 3.3.5 -->
-    <script src="/zhds/Bootstrap/js/bootstrap.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="/zhds/Public/js/app.min.js"></script>
+
 	<script>
 		$('#pGoods').addClass("active").siblings().removeClass("active");
 		$('#iGoods').addClass("active");
@@ -298,7 +315,7 @@
 						$(".check-all").prop("checked", true);
 					}
 				});
-			})
+			});
 			$("#del").click(function(){
 				layer.open({
 					icon:0,
@@ -310,7 +327,7 @@
 						$('#form').submit();
 						}
 				});	
-			})
+			});
 			$(".del").click(function(){
 				var val=$(this).attr('val');
 				layer.open({
@@ -323,8 +340,9 @@
 							location.href = val;
 						}
 				});	
-			})
-		})
+			});
+			
+		});
 	</script>
 </body>
 </html>

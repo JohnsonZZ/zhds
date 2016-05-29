@@ -128,7 +128,7 @@ a:active{ text-decoration:none; color:#222222;}
 .main-list{width:210px; height:520px; background: #fafafa;}
 .main-menu{width:190px; height:370px;padding-left:20px;}
 .main-menu h3{color: #c49173;font-size: 12px;font-weight:bold;height: 38px;line-height: 38px;border-bottom: 1px solid #dfdfdf;}
-.main-content{width:748px;min-height:676px;padding-bottom:10px;margin-bottom:10px;border: 1px solid #e3e3e3;}
+.main-content{width:748px;padding-bottom:10px;margin-bottom:10px;border: 1px solid #e3e3e3;}
 .main-name{width:748px;height:36px;border-bottom: 1px solid #e6e6e6;background: #fafafa;}
 .main-name span{font-size: 12px;font-weight: bold;line-height: 36px;color: #666; padding-left:36px;float:left;}
 .main-back{line-height:36px;font-size: 12px;padding-right:36px;}

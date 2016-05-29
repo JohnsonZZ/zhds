@@ -146,23 +146,12 @@
             <li id="pGoods" class="treeview">
               <a href="#">
                 <i class="fa fa-user"></i>
-                <span>服务产品</span>
+                <span>公司产品</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li id="iGoods"><a href="<?php echo U('Goods/index');?>"><i class="fa fa-circle-o"></i> 产品列表</a></li>
                 <li id="aGoods"><a href="<?php echo U('Goods/add');?>"><i class="fa fa-circle-o"></i> 添加产品</a></li>
-              </ul>
-            </li>
-            <li id="pList" class="treeview">
-              <a href="#">
-                <i class="fa fa-laptop"></i>
-                <span>案例展示</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li id="iList"><a href="<?php echo U('List/index');?>"><i class="fa fa-circle-o"></i> 查看案例</a></li>
-                <li id="aList"><a href="<?php echo U('List/add');?>"><i class="fa fa-circle-o"></i> 添加案例</a></li>
               </ul>
             </li>
 			<li id="pNews" class="treeview">

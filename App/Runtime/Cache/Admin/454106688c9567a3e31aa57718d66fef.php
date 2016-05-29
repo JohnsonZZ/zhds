@@ -4,7 +4,7 @@
     <head>
         	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TonyMB | 控制台</title>
+    <title>修改图片 | 中航鼎盛控制台</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -198,9 +198,9 @@
             <div class="content-wrapper">
                 <section class="content-header">
                     <h1>
-                        添加产品
+                        修改图片
                         <small>
-                            注意排序方式
+                            排序越低越靠前，图尽量小一点。
                         </small>
                     </h1>
                     <ol class="breadcrumb">
@@ -212,7 +212,7 @@
                             </a>
                         </li>
                         <li class="active">
-                            添加产品
+                            修改图片
                         </li>
                     </ol>
                 </section>
@@ -220,51 +220,33 @@
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <h3 class="box-title">
-                                添加产品
+                                修改图片
                             </h3>
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->
                         <form role="form" action="<?php echo U('update');?>" method="post" enctype="multipart/form-data">
+							<input type="hidden" name="id" value="<?php echo ($img[id]); ?>" />
                             <div class="box-body">
 								<div class="form-group">
-									<label for="goods">
-                                        产品图
+									 <label for="img" class="form-group-img">
+									 原图片<br /><img src="/zhds/Public/upload/image/<?php echo ($img['img']); ?>"   id="oldImg"  width="60px" height="60px"><br /> 
+									 新图片(不设置或者设置错误都将使用原来图片)<br />
+                                        图片（不能大于2MB）
                                     </label>
-									<input type="file" name="photo" id="goods" />
+									<input type="file" name="img" id="img" />
 								</div>
 								<div class="form-group">
                                     <label for="ol">
-                                        排序(1-7出现在首页！)
+                                        排序
                                     </label>
-                                    <input type="text" class="form-control" name="ol" id="ol" placeholder="序号越低越靠前">
+                                    <input type="text" class="form-control" name="ol" id="ol" placeholder="序号越低越靠前" value="<?php echo ($img[ol]); ?>" />
                                 </div>
-								<div class="form-group">
-                                    <label for="sort">
-                                        分类
-                                    </label>
-                                    <select class="form-control" id="sort" name="sort">
-										<option value="">全部</option>
-										<option value="1">手镯</option>
-										<option value="2">戒指</option>
-										<option value="3">套链</option>
-									</select>
-                                </div>
-								<div class="form-group">
-                                    <label for="brief">
-                                        简介
-                                    </label>
-                                    <input type="text" class="form-control" name="brief" id="brief" placeholder="输入简介">
-                                </div>
-								<div class="form-group">
-								  <label for="content">内容</label>
-								  <textarea name="content" id="content" style="height:400px;" placeholder="Enter ..."></textarea>
-								</div>
 								
-                            </div>
+							</div>
                             <!-- /.box-body -->
                             <div class="box-footer">
-                                <button type="submit" id = "addbutton" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary">
                                     提交
                                 </button>
                             </div>
@@ -292,13 +274,10 @@
     <script src="/zhds/Public/js/app.min.js"></script>
 		<script src="/zhds/Bootstrap/js/fileinput.min.js"></script>
 		<script src="/zhds/Bootstrap/js/fileinput_locale_zh.js"></script>
-		<script charset="utf-8" src="/zhds/Plugins/ueditor/ueditor.config.js"></script>
-		<script charset="utf-8" src="/zhds/Plugins/ueditor/ueditor.all.min.js"></script>
-		<script charset="utf-8" src="/zhds/Plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
         <script>
-            $('#pGoods').addClass("active").siblings().removeClass("active");
-            $('#aGoods').addClass("active");
-			$('#goods').fileinput({
+            $('#pImg').addClass("active").siblings().removeClass("active");
+            $('#aImg').addClass("active");
+			$('#img').fileinput({
                 language: 'zh', //设置语言
                 allowedFileExtensions : ['jpg', 'png','gif'],//接收的文件后缀,
                 showUpload: false, //是否显示上传按钮
@@ -306,25 +285,7 @@
                 browseClass: "btn btn-primary", //按钮样式 
 				maxFileSize: 1024,
             });
-			var ue = UE.getEditor('content',{ initialFrameWidth: null });
-			$("#addbutton").click(function(){
-				var goods = $('#goods').val();
-				var sort = $('#sort').val();
-				var brief = $('#brief').val();
-				if(goods.length==0){
-					layer.msg("产品图不能为空");
-					return false;
-				}
-				if(sort==""){
-					layer.msg("请选择分类");
-					return false;
-				}
-				if(brief.length==0){
-					layer.msg("简介不能为空");
-					return false;
-				}
-				
-			});
+			
 		</script>
     </body>
 

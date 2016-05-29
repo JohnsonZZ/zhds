@@ -5,6 +5,9 @@
 </head>
 
 <body>
+	<script src="__PUBLIC__/js/jquery.js"></script>
+	<!-- layer 2.2 -->
+	<script src="__PLUGINS__/layer/layer.js"></script>
     <include file="Public/nav" />
 	<div class="blankarea1"></div>
     <div class="main bc"> 
@@ -14,9 +17,9 @@
 				<h3>产品分类</h3>
 				<ul class="main-ul">
 					<li id="company-news">><a href="{:U('index')}">所有产品</a></li>
-					<li id="company-news">><a href="?sort=1">手镯</a></li>
-					<li id="company-news">><a href="?sort=2">戒指</a></li>
-					<li id="company-news">><a href="?sort=3">套链</a></li>
+					<li id="company-news">><a href="{:U('index')}?sort=1">手镯</a></li>
+					<li id="company-news">><a href="{:U('index')}?sort=2">戒指</a></li>
+					<li id="company-news">><a href="{:U('index')}?sort=3">套链</a></li>
 				</ul>
 				<h3>联系我们</h3>
 				<ul class="contact-ul">
@@ -29,42 +32,41 @@
         </div>
         <div class="main-content fl">
         	<div class="main-name">
-            	<span>所有产品</span>
+            	<span>{$sort1}</span>
                 <div class="main-back fr">
-                	<a href="{:U('Index/index')}">首页</a>>所有产品
+                	<a href="{:U('Index/index')}">首页</a>>{$sort1}
                 </div>
             </div>
 			<volist name="list" id="val">
 			<div class="goods">
-				<a class="image1" href="javascript:;">
+				<a class="image{$val['id']}" href="javascript:;">
 					<div class="image">
 						<img src="__PUBLIC__/upload/image/{$val[href]}" alt="{$val['brief']}"  height="150" width="140"/>
 					</div>
-						<div id="tong" class="hide layui-layer-wrap" style="display: none;"><img src="__PUBLIC__/upload/image/{$val[href]}" width="100%" /></div>
 					<div class="image-bottom f14">
 						{$val['brief']}
 					</div>
 				</a>
 			</div>
+			<script>   <!--选择不一样的id值-->
+						$(".image" + {$val['id']}).click(function(){
+							layer.open({
+							  type: 1,
+							  title: false,
+							  closeBtn: 0,
+							  skin: 'layui-layer-nobg', //没有背景色
+							  shadeClose: true,
+							  content: $("#tong" +{$val['id']})
+							});
+						})
+			</script>
+			<div id="tong{$val['id']}" class="hide layui-layer-wrap" style="display: none;"><img src="__PUBLIC__/upload/image/{$val[href]}" width="100%" /></div>
 			</volist>
         </div>
     </div>
 
 	<include file="Public/footer" />
-		<script src="__PUBLIC__/js/jquery.js"></script>
-		<!-- layer 2.2 -->
-		<script src="__PLUGINS__/layer/layer.js"></script>
-		<script>
-		$(".image1").click(function(){
-			layer.open({
-			  type: 1,
-			  title: false,
-			  closeBtn: 0,
-			  skin: 'layui-layer-nobg', //没有背景色
-			  shadeClose: true,
-			  content: $('#tong')
-			});
-		})
-		</script>
+
+		
     </body>
 </html>
