@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<include file="Public/header" title="首页-百事得物流公司" />
+<include file="Public/header" title="首页-中航鼎盛首饰技术开发有限公司" />
 </head>
 
 <body>
@@ -30,18 +30,16 @@
 						<a id="btnLeft" href="javascript:;"></a>
 						<a id="btnRight" href="javascript:;"></a>
 						<ul id="uSlide" class="uSlide">
-							<li><img src="__PUBLIC__/images/wuliu.png" alt="新闻图片" height="300px" width="450px"/></li>
-							<li><img src="__PUBLIC__/images/example3.jpg" alt="新闻图片" height="300px" width="450px"/></li>
-							<li><img src="__PUBLIC__/images/example1.jpg" alt="新闻图片" height="300px" width="450px"/></li>
-							<li><img src="__PUBLIC__/images/RFID.png" alt="新闻图片" height="300px" width="450px"/></li>
-							<li><img src="__PUBLIC__/images/example2.jpg" alt="新闻图片" height="300px" width="450px"/></li>
+							<foreach name="img" item="val">
+							<li><img src="__PUBLIC__/upload/image/{$val['img']}" alt="轮播图片"  width="450" height="300"/></li>
+							</foreach>
 						</ul>
 						<div id="ico" class="ico">
-								<a class="active" href="javascript:;"></a>
-								<a href="javascript:;"></a>
-								<a href="javascript:;"></a>
-								<a href="javascript:;"></a>
-								<a href="javascript:;"></a>
+							<a class="active" href="javascript:void(0);"></a>
+							<a  href="javascript:void(0);"></a>	
+							<a  href="javascript:void(0);"></a>	
+							<a  href="javascript:void(0);"></a>	
+							<a  href="javascript:void(0);"></a>	
 						</div>
 					</div>
 				</div>
@@ -52,7 +50,7 @@
 					</div>
 					<ul class="news-ul fl">
 						<volist name="list" id="val">
-						<li><a href="{:U('Home/News/article/theme/'.$val[id])}">{$val['title']}</a><span>{$val['time']}</span></li><hr />
+						<li><a href="{:U('Home/News/article/theme/'.$val[id])}">{$val['title']|msubstr=0,23,'utf-8',false}</a><span>{$val['time']}</span></li><hr />
 						</volist>
 					</ul>
 				</div>            

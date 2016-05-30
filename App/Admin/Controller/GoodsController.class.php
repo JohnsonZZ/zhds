@@ -32,6 +32,7 @@ class GoodsController extends ComController {
 		$data['brief'] = I('post.brief');
 		$data['content'] = $_POST['content'];
 		$data['ol'] = I('post.ol');
+		$data['time'] = now();
 		if(!empty($_FILES)){
 			$upload = new \Think\Upload();// 实例化上传类
 			$upload->subName   =     array('date', 'Ymd');
@@ -73,19 +74,34 @@ class GoodsController extends ComController {
 		}
 	}
 	public function del(){
+		$Goods = M('Goods');
 		$lids = I('param.id');
 		if(is_array($lids)){
 			$lids = implode(',',$lids);
 			$map['id']  = array('in',$lids);
-		}else{
-			$map['id'] = $lids;
+			$path = $Goods->where($map)->field('href')->select();	//找到图片
+			$result = $Goods->where($map)->delete();
+			$len = count($path);
+			if($result){
+				for($i=0 ; i< $len ; ++$i ){
+					unlink('Public/upload/image/'.$path[i]['img']);
+					}
+				$this->success('删除成功');
+			} else {
+				$this->error('删除失败');
+			}
 		}
-		$Goods = M('Goods');
-		$result = $Goods->where($map)->delete();
-		if($result){
-			$this->success('删除成功');
-		} else {
-			$this->error('删除失败');
+		else{
+			$map['id'] = $lids;
+			$path = $Goods->where($map)->field('href')->find();	//找到图片
+			$file = 'Public/upload/image/'.$path['href']; //储存之前的图像路径
+			$result = $Goods->where($map)->delete();
+			if($result){
+				unlink($file);
+				$this->success('删除成功');
+			} else {
+				$this->error('删除失败');
+			}
 		}
 	}
 }

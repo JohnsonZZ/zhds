@@ -1,6 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
+header("Content-type:text/html;charset=utf-8");
 class ImgController extends Controller {
 	public function index(){
 		$Img = M('Img');
@@ -87,20 +88,36 @@ class ImgController extends Controller {
 		}
 	}
 	public function del(){
+		$Img = M('Img');
 		$lids = I('param.id');
 		if(is_array($lids)){
 			$lids = implode(',',$lids);
 			$map['id']  = array('in',$lids);
-		}else{
+			$path = $Img->where($map)->field('img')->select();	//找到图片
+			$result = $Img->where($map)->delete();
+			$len = count($path);
+			if($result){
+				for($i=0 ; i< $len ; ++$i ){
+					unlink('Public/upload/image/'.$path[i]['img']);
+					}
+				$this->success('删除成功');
+			} else {
+				$this->error('删除失败');
+			}
+		}
+		else{
 			$map['id'] = $lids;
+			$path = $Img->where($map)->field('img')->find();	//找到图片
+			$file = 'Public/upload/image/'.$path['img']; //储存之前的图像路径
+			$result = $Img->where($map)->delete();
+			if($result){
+				unlink($file);
+				$this->success('删除成功');
+			} else {
+				$this->error('删除失败');
+			}
 		}
-		$Img = M('Img');
-		$result = $Img->where($map)->delete();
-		if($result){
-			$this->success('删除成功');
-		} else {
-			$this->error('删除失败');
-		}
+			
 	}
 
 	
