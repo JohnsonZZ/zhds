@@ -1,165 +1,144 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<include file="Public/header" title="首页-中航鼎盛首饰技术开发有限公司" />
-</head>
-
-<body>
-    <include file="Public/nav" />
-
-		<div class="homepage bc">        
-
-			<div class="blankarea2"></div>
-			<div class="suit fl">
-            	<div class="suit-area">
-                	<h3 class="fl">精美作品</h3>
-            	</div>
-                <div class="suit-image">
-					<div id="film">
-						<ul id="uFilm" class="uFilm">
-							<foreach name="goods" item="val">
-							<li><img src="__PUBLIC__/upload/image/{$val['href']}" alt="{$val['brief']}"  width="200" height="150"/></li>
-							</foreach>
-						</ul>
+<html>
+	<head>
+		<include file="Public/header" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Abcty2d6CGtscG1TZK3K32ZFIR5bMURZ"></script>
+	</head>
+	<body>
+		<include file="Public/nav" />
+		<div class="main">
+			<div class="welcome">
+				<h1>AVIC PEAK JEWELLERY TECHNOLOGY DEVELOPMENT CO LTD</h1>
+				<h2>欢迎来到中航鼎盛首饰技术开发有限公司</h2>
+				<h3>————</h3>
+				<p>
+					中航鼎盛是中航国际语香港东方珠宝集团有限公司共同创建的中外合资公司，实力雄厚，信誉可靠。<br />
+					广东中航鼎盛首饰技术开发有限公司（简称中航鼎盛）是一家专业设计、生产、销售黄金饰品、白银饰品、珠宝首饰、硬金、万足金（精品）、银成品材料（首饰用）、K金工艺品；珠宝首饰新技术开发；从事首饰加工技术进出口业务。<br />
+					中航鼎盛将依靠两家股东公司的雄厚实力深耕细作、精益求精地设计与生产精品首饰，使其工艺在常规黄金首饰、3D硬金首饰和其他首饰设计与加工领域处于领先地位；同时我们也将继续秉承专业的精神，不断完善管理体系，一热诚的态度，为客户服务实现双赢，与客户共同成就辉煌事业！
+				</p>
+				<div class="center">
+					<a href="{:U('Comp/index')}"><img id="learn-more" src="__PUBLIC__/images/more.png" alt="了解更多"/></a>
+				</div>
+			</div>
+			<div class="bc">
+				<div class="product">
+					<h1>THE MAIN PRODUCTS</h1>
+					<h2>主营系列</h2>
+					<h3>————</h3>
+					<div class="goods">
+						<foreach item="val" name="goods">
+							<div class="imgarea">
+								<a href="{:U('Goods/index')}"><img src="__PUBLIC__/upload/image/{$val['href']}" width="233" height="233"/></a>
+							</div>
+						</foreach>
 					</div>
-                </div>
-            </div>
-			<div class="news fl">
-				<div class="news-images fl">
-					<div id="slide">
-						<a id="btnLeft" href="javascript:;"></a>
-						<a id="btnRight" href="javascript:;"></a>
-						<ul id="uSlide" class="uSlide">
-							<foreach name="img" item="val">
-							<li><img src="__PUBLIC__/upload/image/{$val['img']}" alt="轮播图片"  width="450" height="300"/></li>
-							</foreach>
-						</ul>
-						<div id="ico" class="ico">
-							<a class="active" href="javascript:void(0);"></a>
-							<a  href="javascript:void(0);"></a>	
-							<a  href="javascript:void(0);"></a>	
-							<a  href="javascript:void(0);"></a>	
-							<a  href="javascript:void(0);"></a>	
+				</div>
+			</div>
+			<div class="news">
+				<h1>NEWS DYNAMIC</h1>
+				<h2>新闻动态</h2>
+				<h3>————</h3>
+				<div class="list">
+					<div class="newsarea">
+						<a href="#"><img src="__PUBLIC__/images/news1.png" /></a>
+						<p>玉从色彩上分有：白玉、碧玉、青玉、墨玉、黄玉、京白玉等。近日由本公司的钻石独家冠名赞助，由金牌主持大型情感调查节目，敬请期待...</p>
+					</div>
+					<div class="newsarea">
+						<a href="#"><img src="__PUBLIC__/images/news2.png" /></a>
+						<p>翡翠的色彩异常丰富，它是评价翡翠优劣和价值重要的一个因素。同时，本公司推出了“关爱亲人系列”以独特的设计理念表达了亲人之间...</p>
+					</div>
+					<div class="newsarea">
+						<a href="#"><img src="__PUBLIC__/images/news3.png" /></a>
+						<p>为提员工团结意识，公司组织了员工培训。本次培训主要是围绕“创新”和“团队”两个方面，让员工深入了解公司文化和设计需求...</p>
+					</div>
+				</div>
+			</div>
+			<div class="contact-bc">
+				<div class="contact">
+					<h1>CONTACT US</h1>
+					<h2>联系我们</h2>
+					<h3>————</h3>
+					<div class="address">
+						<div style="width:530px;height:260px;font-size:12px" class="fl" id="map"></div>
+						<div class="fr">
+							<ul style="padding:0;font-size:15px;margin-top:80px;">
+								<li>官网：zhds.cxg-e.com</li>
+								<li>邮编：516000</li>
+								<li>热线：0758-6622298 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0758-6622299</li>
+								<li>传真：0758-2759928</li>  
+								<li>地址：广东省肇庆市端州区肇庆大道125区中航鼎盛综合大楼</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="news-list fr">
-					<h3 class="fl">公司新闻</h3>
-					<div class="news-more fr">
-						<a class="fr" href="{:U('News/index')}">+More</a>
-					</div>
-					<ul class="news-ul fl">
-						<volist name="list" id="val">
-						<li><a href="{:U('Home/News/article/theme/'.$val[id])}">{$val['title']|msubstr=0,23,'utf-8',false}</a><span>{$val['time']}</span></li><hr />
-						</volist>
-					</ul>
-				</div>            
 			</div>
-			<div class="blankarea2 fl"></div>
-			
-			<div class="company fl">
-				<h3 class="fl">公司简介</h3>
-				<div class="company-more fr">
-					<a class="fr" href="{:U('Comp/index')}">+More</a>
-				</div>
-				<div class="company-content fl">
-					<div class="company-image">
-						<img src="__PUBLIC__/images/ds.jpg" alt="公司图片" width="220px"/>
-					</div>
-					<p class="company-list fr">
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东中航鼎盛首饰技术开发有限公司（简称中航鼎盛）是一家专业设计、生产、销售黄金饰品、白银饰品、珠宝首饰、硬金、万足金（精品）、银成品材料（首饰用）、K金工艺品；珠宝首饰新技术开发；从事首饰加工技术进出口业务。<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中航鼎盛是中航国际语香港东方珠宝集团有限公司共同创建的中外合资公司，实力雄厚，信誉可靠。
-					</p>
-				</div>
-            </div> 			
-			<div class="contact fr">
-				<h3>联系我们</h3>
-				<ul>
-					<li>官网：zhds.cxg-e.com</li>
-					<li>邮编：516000</li>
-					<li>热线：0758-6622298  6622299</li>
-					<li>传真：0758-2759928</li>  
-					<li>地址：广东省肇庆市端州区肇庆大道125区中航鼎盛综合大楼</li>
-				</ul>
-            </div>
-			
 		</div>
 		<include file="Public/footer" />
-		<script src="__PUBLIC__/js/jquery.js"></script>
 		<script>
-			//start slide 
-			var aIco = $('#ico').children();
-			var index = 0;
-			var baseWidth = parseInt($('#slide').css('width'));
-			var iNow = 0;
-			$.each(aIco,function(){
-				$(this).attr('index',index);
-				$(this).click(function(){
-					$(this).addClass('active').siblings().removeClass('active');
-					var offsetWidth = $(this).attr('index') * -baseWidth + 'px';
-					move(offsetWidth);
-
-				});
-				index++;
-			})
-			$('#btnRight').click(function(){
-				var ativeIco = $('#ico').children(".active").attr('index');
-				iNow = ++ativeIco;
-				if(iNow > index-1){
-					iNow = 0;
+			$('#index').addClass('current');
+			$('#learn-more').hover(
+				function(){
+					$(this).attr('src','__PUBLIC__/images/more1.png');
+				},
+				function(){
+					$(this).attr('src','__PUBLIC__/images/more.png');
 				}
-				aIco.eq(iNow).addClass('active').siblings().removeClass('active');
-				var offsetWidth = iNow * -baseWidth + 'px';
-				move(offsetWidth);
-			})
-			$('#btnLeft').click(function(){
-				var ativeIco = $('#ico').children(".active").attr('index');
-				iNow = --ativeIco;
-				if(iNow <0){
-					iNow = 4;
-				}
-				aIco.eq(iNow).addClass('active').siblings().removeClass('active');
-				var offsetWidth = iNow * -baseWidth + 'px';
-				move(offsetWidth);
-			})
-			function move(offsetWidth){
-				$('#uSlide').stop(true,true).animate({left: offsetWidth}, { duration: 1000 });
+			)
+			//创建和初始化地图函数：
+			function initMap(){
+			  createMap();//创建地图
+			  setMapEvent();//设置地图事件
+			  addMapControl();//向地图添加控件
+			  addMapOverlay();//向地图添加覆盖物
 			}
-			function autoMove(){
-				var ativeIco = $('#ico').children(".active").attr('index');
-				iNow = ++ativeIco;
-				if(iNow > index-1){
-					iNow = 0;
-				}
-				aIco.eq(iNow).addClass('active').siblings().removeClass('active');
-				var offsetWidth = iNow * -baseWidth + 'px';
-				move(offsetWidth);
+			function createMap(){ 
+			  map = new BMap.Map("map"); 
+			  map.centerAndZoom(new BMap.Point(112.521694,23.12098),16);
 			}
-			setInterval("autoMove()",5000);
-			//end slide
-			//start film
-			var fNow = 0;
-			var aNow = 0;
-			var lFilm = $('#uFilm').children();
-			var lLen = lFilm.length;
-			function autoFilm(){
-			if(fNow === 0){
-					aNow++;
-					var offsetWidth = aNow * -240 + 'px';
-					$('#uFilm').stop(true,true).animate({left: offsetWidth}, { duration: 1000 });
-					if(aNow > lLen-5){
-						fNow = 1;
-					}
-				}else{
-					aNow --;
-					var offsetWidth = parseInt($('#uFilm').css('left')) + 240 + 'px';
-					$('#uFilm').stop(true,true).animate({left: offsetWidth}, { duration: 1000 });
-					if(aNow == 0){
-						fNow = 0;
-					}
-				}
+			function setMapEvent(){
+			  map.enableScrollWheelZoom();
+			  map.enableKeyboard();
+			  map.enableDragging();
+			  map.enableDoubleClickZoom()
 			}
-			setInterval("autoFilm()",2000);
+			function addClickHandler(target,window){
+			  target.addEventListener("click",function(){
+				target.openInfoWindow(window);
+			  });
+			}
+			function addMapOverlay(){
+			  var markers = [
+				{content:"官网：zhds.cxg-e.com<br />热线：0758-6622298 6622299 <br />传真：0758-2759928",title:"中航鼎盛首饰技术开发有限公司",imageOffset: {width:-46,height:-21},position:{lat:23.120481,lng:112.520652}}
+			  ];
+			  for(var index = 0; index < markers.length; index++ ){
+				var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+				var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+				  imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+				})});
+				var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+				var opts = {
+				  width: 200,
+				  title: markers[index].title,
+				  enableMessage: false
+				};
+				var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+				marker.setLabel(label);
+				addClickHandler(marker,infoWindow);
+				map.addOverlay(marker);
+			  };
+			}
+			//向地图添加控件
+			function addMapControl(){
+			  var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+			  scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+			  map.addControl(scaleControl);
+			  var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+			  map.addControl(navControl);
+			  var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+			  map.addControl(overviewControl);
+			}
+			var map;
+			  initMap();
 		</script>
-    </body>
+	</body>
 </html>

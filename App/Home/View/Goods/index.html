@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public/header" title="产品-广东中航鼎盛首饰技术开发有限公司" />
+</head>
+
+<body>
+	<script src="__PUBLIC__/js/jquery.js"></script>
+	<!-- layer 2.2 -->
+	<script src="__PLUGINS__/layer/layer.js"></script>
+    <include file="Public/nav" />
+    <div class="product-main"> 
+        <div class="product-left">
+			<h3>产品分类</h3>
+			<ul class="left-nav">
+				<li id="">><a href="{:U('index')}">所有产品</a></li>
+				<li id="">><a href="{:U('index')}?sort=1">手镯</a></li>
+				<li id="">><a href="{:U('index')}?sort=2">戒指</a></li>
+				<li id="">><a href="{:U('index')}?sort=3">套链</a></li>
+			</ul>
+		</div>
+		<div class="product-right">
+			<div class="right-title">
+            	<span>{$sort1}</span>
+            </div>
+			<volist name="list" id="val">
+			<div class="goods">
+				<a class="image{$val['id']}" href="javascript:;">
+					<div class="image">
+						<img src="__PUBLIC__/upload/image/{$val[href]}" alt="{$val['brief']}"  height="233" width="233"/>
+					</div>
+					<div class="image-bottom">
+						{$val['brief']}
+					</div>
+				</a>
+			</div>
+			</volist>
+	
+		</div>
+    </div>
+	<div class="clear"></div>
+	<include file="Public/footer" />
+	<script>
+		
+		$('#goods').addClass('current');
+		$('.goods').hover(
+					function(){
+						$(this).css("border-bottom","2px solid #666");
+					},
+					function(){
+						$(this).css("border-bottom","none");
+					});
+	
+	
+	</script>
+		
+    </body>
+</html>

@@ -2,7 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 header("Content-type:text/html;charset=utf-8");
-class ConnectController extends Controller {
+class ContactController extends Controller {
     public function index(){
         $this->display();
 	}

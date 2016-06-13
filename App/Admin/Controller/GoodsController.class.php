@@ -7,7 +7,7 @@ class GoodsController extends ComController {
 		$Goods = M('Goods');
 		$count = $Goods->count(); // 查询满足要求的总记录数
 		$Page = new \Think\Page($count,8); // 实例化分页类 传入总记录数和每页显示的记录数(10)
-		$list = $Goods->order('ol desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+		$list = $Goods->order('time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
 		$Page->setConfig('prev', '<');
 		$Page->setConfig('next', '>');
 		$Page->setConfig('header','');
@@ -26,13 +26,13 @@ class GoodsController extends ComController {
 		$this->assign('list',$list);
 		$this->display();
 	}
-	public function update(){
+	public function update(){		
+		$Goods = M('Goods');
 		$id = I('post.id');
 		$data['sort'] = I('post.sort');
 		$data['brief'] = I('post.brief');
 		$data['content'] = $_POST['content'];
 		$data['ol'] = I('post.ol');
-		$data['time'] = now();
 		if(!empty($_FILES)){
 			$upload = new \Think\Upload();// 实例化上传类
 			$upload->subName   =     array('date', 'Ymd');
@@ -51,7 +51,13 @@ class GoodsController extends ComController {
 				}
 			
 		}
-		$Goods = M('Goods');
+		if($data['ol']<=4 && $data['ol'] >=1){
+			$ol = $Goods -> where('ol='.$data['ol']) -> find();
+			if($ol){													//修改旧的RANK值
+				$r['ol'] = 0;
+				$Goods -> where('id='.$ol['id']) -> save($r);
+			}
+		}
 		if($id){
 			$path = $Goods->where('id ='.$id)->field('href')->find();	//更头像
 			$file = 'Public/upload/image/'.$path['href']; //储存之前的图像路径

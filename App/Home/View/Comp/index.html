@@ -1,99 +1,91 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<include file="Public/header" title="概况-中航鼎盛首饰技术开发有限公司" />
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Abcty2d6CGtscG1TZK3K32ZFIR5bMURZ"></script>
-</head>
+	<head>
+		<include file="Public/header" title="产品-广东中航鼎盛首饰技术开发有限公司" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Abcty2d6CGtscG1TZK3K32ZFIR5bMURZ"></script>
+	</head>
 
-<body>
-    <include file="Public/nav" />
-	<div class="blankarea1"></div>
-		<div class="main bc"> 
-			<div class="blankarea4"></div>
-			<div class="main-list fl">
-				<div class="main-menu">
-					<h3>关于我们</h3>
-					<ul class="main-ul">
-						<li id="intro">公司介绍</li>
-						<li id="system"></li>
-					</ul>
-				</div>
-				
-			</div>
-			<div class="main-content fl">
-				<div class="main-name">
+	<body>
+		<script src="__PUBLIC__/js/jquery.js"></script>
+		<!-- layer 2.2 -->
+		<script src="__PLUGINS__/layer/layer.js"></script>
+		<include file="Public/nav" />
+		<div class="comp-main"> 
+			<div class="comp-rcontent">
+				<div class="comp-title">
 					<span>公司介绍</span>
-					<div class="main-back fr">
-						<a href="{:U('Index/index')}">首页</a>>公司概况
-					</div>
 				</div>
 				<div id="intro-list" class="introduce">
 					<h1>中航鼎盛首饰技术开发有限公司</h1>
 					<p class="pt20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东中航鼎盛首饰技术开发有限公司（简称中航鼎盛）是一家专业设计、生产、销售黄金饰品、白银饰品、珠宝首饰、硬金、万足金（精品）、银成品材料（首饰用）、K金工艺品；珠宝首饰新技术开发；从事首饰加工技术进出口业务。</p>
 					<p class="pt10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中航鼎盛是中航国际语香港东方珠宝集团有限公司共同创建的中外合资公司，实力雄厚，信誉可靠。</p>
 					<p class="pt10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中航鼎盛将依靠两家股东公司的雄厚实力深耕细作、精益求精地设计与生产精品首饰，使其工艺在常规黄金首饰、3D硬金首饰和其他首饰设计与加工领域处于领先地位；同时我们也将继续秉承专业的精神，不断完善管理体系，一热诚的态度，为客户服务实现双赢，与客户共同成就辉煌事业！</p>
-					<div style="width:648px;height:300px;font-size:12px" id="map"></div>
+					<br />
+					<div style="width:800px;height:500px;font-size:12px;margin:0 auto" id="map"></div>
 				</div>
+
+		
 			</div>
 		</div>
-	<include file="Public/footer" />
-	<script src="__PUBLIC__/js/jquery.js"></script>
-	<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-      createMap();//创建地图
-      setMapEvent();//设置地图事件
-      addMapControl();//向地图添加控件
-      addMapOverlay();//向地图添加覆盖物
-    }
-    function createMap(){ 
-      map = new BMap.Map("map"); 
-      map.centerAndZoom(new BMap.Point(112.521694,23.12098),16);
-    }
-    function setMapEvent(){
-      map.enableScrollWheelZoom();
-      map.enableKeyboard();
-      map.enableDragging();
-      map.enableDoubleClickZoom()
-    }
-    function addClickHandler(target,window){
-      target.addEventListener("click",function(){
-        target.openInfoWindow(window);
-      });
-    }
-    function addMapOverlay(){
-      var markers = [
-        {content:"官网：zhds.cxg-e.com<br />热线：0758-6622298 6622299 <br />传真：0758-2759928",title:"中航鼎盛首饰技术开发有限公司",imageOffset: {width:-46,height:-21},position:{lat:23.120481,lng:112.520652}}
-      ];
-      for(var index = 0; index < markers.length; index++ ){
-        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
-        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
-          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
-        })});
-        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
-        var opts = {
-          width: 200,
-          title: markers[index].title,
-          enableMessage: false
-        };
-        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
-        marker.setLabel(label);
-        addClickHandler(marker,infoWindow);
-        map.addOverlay(marker);
-      };
-    }
-    //向地图添加控件
-    function addMapControl(){
-      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
-      map.addControl(scaleControl);
-      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-      map.addControl(navControl);
-      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
-      map.addControl(overviewControl);
-    }
-    var map;
-      initMap();
-  </script>
-</body>
+		<div class="clear"></div>
+		<include file="Public/footer" />
+		<script type="text/javascript">
+			$('#comp').addClass('current');
+			//创建和初始化地图函数：
+			function initMap(){
+			  createMap();//创建地图
+			  setMapEvent();//设置地图事件
+			  addMapControl();//向地图添加控件
+			  addMapOverlay();//向地图添加覆盖物
+			}
+			function createMap(){ 
+			  map = new BMap.Map("map"); 
+			  map.centerAndZoom(new BMap.Point(112.521694,23.12098),16);
+			}
+			function setMapEvent(){
+			  map.enableScrollWheelZoom();
+			  map.enableKeyboard();
+			  map.enableDragging();
+			  map.enableDoubleClickZoom()
+			}
+			function addClickHandler(target,window){
+			  target.addEventListener("click",function(){
+				target.openInfoWindow(window);
+			  });
+			}
+			function addMapOverlay(){
+			  var markers = [
+				{content:"官网：zhds.cxg-e.com<br />热线：0758-6622298 6622299 <br />传真：0758-2759928",title:"中航鼎盛首饰技术开发有限公司",imageOffset: {width:-46,height:-21},position:{lat:23.120481,lng:112.520652}}
+			  ];
+			  for(var index = 0; index < markers.length; index++ ){
+				var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+				var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+				  imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+				})});
+				var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+				var opts = {
+				  width: 200,
+				  title: markers[index].title,
+				  enableMessage: false
+				};
+				var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+				marker.setLabel(label);
+				addClickHandler(marker,infoWindow);
+				map.addOverlay(marker);
+			  };
+			}
+			//向地图添加控件
+			function addMapControl(){
+			  var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+			  scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+			  map.addControl(scaleControl);
+			  var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+			  map.addControl(navControl);
+			  var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+			  map.addControl(overviewControl);
+			}
+			var map;
+			initMap();
+		 </script>		
+    </body>
 </html>
